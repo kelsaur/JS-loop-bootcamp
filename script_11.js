@@ -25,9 +25,13 @@ let friends = [
     }
 ]
 
-friends.forEach(friendName => console.log(friendName))
-
-
+for (let i = 0; i < friends.length; i++) {
+    console.log(friends[i].name + "'s favoritfrukter:");
+    for (let j = 0; j < friends[i].likes.length; j++) {
+        console.log(friends[i].likes[j]);
+    }
+    console.log('---'); // Separera varje vän med streck
+}
 
 
 
